@@ -20,7 +20,7 @@ Gradle dependency:
 
 ```
 dependencies {
-    implementation "io.trbl:blurhash:1.0.0"
+    implementation "io.trbl:blurhash:1.1.0"
 }
 ```
 
@@ -29,7 +29,7 @@ Maven dependency:
 <dependency>
     <groupId>io.trbl</groupId>
     <artifactId>blurhash</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
@@ -57,11 +57,6 @@ gpg --export-secret-keys > secring.gpg
 Find your key ID:
 ```
 gpg --list-secret-keys --keyid-format 0xSHORT
-```
-
-Dry-run the signing process:
-```
-./gradlew signArchives
 ```
 
 Make sure your key is available on a public server:

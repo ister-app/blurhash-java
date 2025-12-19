@@ -1,71 +1,83 @@
 plugins {
-    id "java"
-    id "maven"
-    id "signing"
+    id 'java-library'
+    id "maven-publish"
 }
+
+group = 'app.ister'
+version = '1.1.0'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation "junit:junit:4.12"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:6.0.1"
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:6.0.1'
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher:6.0.1"
 }
 
-task javadocJar(type: Jar) {
-    classifier "javadoc"
-    from javadoc
+java {
+    withJavadocJar()
+    withSourcesJar()
 }
 
-task sourcesJar(type: Jar) {
-    classifier "sources"
-    from sourceSets.main.allSource
+tasks.named('test') {
+    useJUnitPlatform()
+    jvmArgs '-agentlib:native-image-agent=config-merge-dir=src/main/resources/META-INF/native-image'
 }
 
-artifacts {
-    archives javadocJar, sourcesJar
-}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = 'blurhash'
 
-signing {
-    sign configurations.archives
-}
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            beforeDeployment {
-                MavenDeployment deployment -> signing.signPom(deployment)
-            }
-            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
-            }
-            pom.project {
-                group = "io.trbl"
-                artifactId = "blurhash"
-                archivesBaseName = "blurhash"
-                version = "1.0.0"
-                name "BlurHash for Java"
-                description "A BlurHash encoder implementation in Java"
-                url "https://github.com/hsch/blurhash-java"
-                scm {
-                    url "https://github.com/hsch/blurhash-java"
-                    connection "scm:git:https://github.com/hsch/blurhash-java.git"
-                    developerConnection "scm:git:git@github.com:hsch/blurhash-java.git"
+            from components.java
+            versionMapping {
+                usage('java-api') {
+                    fromResolutionOf('runtimeClasspath')
                 }
+                usage('java-runtime') {
+                    fromResolutionResult()
+                }
+            }
+            pom {
+                name = 'BlurHash for Java'
+                description = 'A BlurHash encoder implementation in Java'
+                url = 'https://github.com/ister-app/blurhash-java'
                 licenses {
                     license {
-                        name "MIT"
-                        url "https://opensource.org/licenses/MIT"
+                        name = 'MIT'
+                        url = 'https://opensource.org/licenses/MIT'
                     }
                 }
                 developers {
                     developer {
-                        id "hendrik"
-                        name "Hendrik"
-                        email "hendrik@h5k.org"
+                        id = 'hendrik'
+                        name = 'Hendrik'
+                        email = 'hendrik@h5k.org'
+                    }
+                    developer {
+                        id = 'tijder'
+                        name = 'Gerben'
                     }
                 }
             }
         }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/ister-app/blurhash-java"
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
+
+javadoc {
+    if(JavaVersion.current().isJava9Compatible()) {
+        options.addBooleanOption('html5', true)
     }
 }

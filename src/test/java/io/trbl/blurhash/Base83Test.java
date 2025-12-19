@@ -1,8 +1,9 @@
 package io.trbl.blurhash;
 
-import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Base83Test {
 
@@ -10,7 +11,7 @@ public class Base83Test {
     public void testSingleDigits() {
         for (int i = 0; i < 83; ++i) {
             String expected = new String(Base83.ALPHABET, i, 1);
-            assertEquals(i + " encodes", expected, Base83.encode(i, 1));
+            assertEquals(expected, Base83.encode(i, 1));
         }
     }
 

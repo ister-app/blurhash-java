@@ -1,0 +1,883 @@
+{
+  "reflection": [
+    {
+      "type": "com.sun.imageio.plugins.jpeg.JPEGImageReader",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "acceptPixels",
+          "parameterTypes": [
+            "int",
+            "boolean"
+          ]
+        },
+        {
+          "name": "passComplete",
+          "parameterTypes": []
+        },
+        {
+          "name": "passStarted",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "pushBack",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "readInputData",
+          "parameterTypes": [
+            "byte[]",
+            "int",
+            "int"
+          ]
+        },
+        {
+          "name": "setImageData",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int",
+            "byte[]"
+          ]
+        },
+        {
+          "name": "skipInputBytes",
+          "parameterTypes": [
+            "long"
+          ]
+        },
+        {
+          "name": "skipPastImage",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "warningOccurred",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "warningWithMessage",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.trbl.blurhash.Base83Test",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "test0000",
+          "parameterTypes": []
+        },
+        {
+          "name": "test0001",
+          "parameterTypes": []
+        },
+        {
+          "name": "test0010",
+          "parameterTypes": []
+        },
+        {
+          "name": "test0011",
+          "parameterTypes": []
+        },
+        {
+          "name": "test00X0",
+          "parameterTypes": []
+        },
+        {
+          "name": "test00XXEncode",
+          "parameterTypes": []
+        },
+        {
+          "name": "test0100",
+          "parameterTypes": []
+        },
+        {
+          "name": "test0XXXDecode",
+          "parameterTypes": []
+        },
+        {
+          "name": "testSingleDigits",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.trbl.blurhash.BlurHashTest",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "test1x1",
+          "parameterTypes": []
+        },
+        {
+          "name": "testBlack",
+          "parameterTypes": []
+        },
+        {
+          "name": "testLorikeet",
+          "parameterTypes": []
+        },
+        {
+          "name": "testWhite",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.awt.GraphicsEnvironment",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "isHeadless",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.BufferedImage",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "colorModel"
+        },
+        {
+          "name": "imageType"
+        },
+        {
+          "name": "raster"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getRGB",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "int",
+            "int"
+          ]
+        },
+        {
+          "name": "setRGB",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "int",
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.ColorModel",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "colorSpace"
+        },
+        {
+          "name": "colorSpaceType"
+        },
+        {
+          "name": "isAlphaPremultiplied"
+        },
+        {
+          "name": "is_sRGB"
+        },
+        {
+          "name": "nBits"
+        },
+        {
+          "name": "numComponents"
+        },
+        {
+          "name": "supportsAlpha"
+        },
+        {
+          "name": "transparency"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getRGBdefault",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.Raster",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "dataBuffer"
+        },
+        {
+          "name": "height"
+        },
+        {
+          "name": "minX"
+        },
+        {
+          "name": "minY"
+        },
+        {
+          "name": "numBands"
+        },
+        {
+          "name": "numDataElements"
+        },
+        {
+          "name": "sampleModel"
+        },
+        {
+          "name": "sampleModelTranslateX"
+        },
+        {
+          "name": "sampleModelTranslateY"
+        },
+        {
+          "name": "width"
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.SampleModel",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "height"
+        },
+        {
+          "name": "width"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getPixels",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "java.awt.image.DataBuffer"
+          ]
+        },
+        {
+          "name": "setPixels",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "java.awt.image.DataBuffer"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.SinglePixelPackedSampleModel",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "bitMasks"
+        },
+        {
+          "name": "bitOffsets"
+        },
+        {
+          "name": "bitSizes"
+        },
+        {
+          "name": "maxBitSize"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Boolean",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.ClassLoader",
+      "fields": [
+        {
+          "name": "classLoaderValueMap"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Enum",
+      "serializable": true
+    },
+    {
+      "type": "java.lang.Object[]",
+      "serializable": true
+    },
+    {
+      "type": "java.lang.SecurityManager"
+    },
+    {
+      "type": "java.lang.System",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "load",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.invoke.MethodHandle"
+    },
+    {
+      "type": "java.util.HashSet",
+      "serializable": true
+    },
+    {
+      "type": "java.util.LinkedHashSet",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.ArrayBlockingQueue",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.locks.ReentrantLock",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.locks.ReentrantLock$NonfairSync",
+      "serializable": true
+    },
+    {
+      "type": "java.util.concurrent.locks.ReentrantLock$Sync",
+      "serializable": true
+    },
+    {
+      "type": "javax.imageio.plugins.jpeg.JPEGHuffmanTable",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "lengths"
+        },
+        {
+          "name": "values"
+        }
+      ]
+    },
+    {
+      "type": "javax.imageio.plugins.jpeg.JPEGQTable",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "qTable"
+        }
+      ]
+    },
+    {
+      "type": "javax.imageio.spi.ImageReaderSpi"
+    },
+    {
+      "type": "javax.imageio.spi.ImageWriterSpi"
+    },
+    {
+      "type": "jdk.internal.misc.Unsafe"
+    },
+    {
+      "type": "jdk.jfr.FlightRecorder"
+    },
+    {
+      "type": "kotlin.Metadata"
+    },
+    {
+      "type": "org.gradle.api.internal.file.temp.GradleUserHomeTemporaryFileProvider"
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.TestClassProcessor",
+      "methods": [
+        {
+          "name": "processTestClass",
+          "parameterTypes": [
+            "org.gradle.api.internal.tasks.testing.TestClassRunInfo"
+          ]
+        },
+        {
+          "name": "startProcessing",
+          "parameterTypes": [
+            "org.gradle.api.internal.tasks.testing.TestResultProcessor"
+          ]
+        },
+        {
+          "name": "stop",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.TestClassRunInfo"
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.TestResultProcessor",
+      "methods": [
+        {
+          "name": "completed",
+          "parameterTypes": [
+            "java.lang.Object",
+            "org.gradle.api.internal.tasks.testing.TestCompleteEvent"
+          ]
+        },
+        {
+          "name": "started",
+          "parameterTypes": [
+            "org.gradle.api.internal.tasks.testing.TestDescriptorInternal",
+            "org.gradle.api.internal.tasks.testing.TestStartEvent"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.filter.TestFilterSpec",
+      "serializable": true
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformSpec",
+      "serializable": true
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformSpec",
+            "org.gradle.internal.id.IdGenerator",
+            "org.gradle.internal.actor.ActorFactory",
+            "org.gradle.internal.time.Clock"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessorFactory",
+      "serializable": true
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.worker.RemoteTestClassProcessor",
+      "methods": [
+        {
+          "name": "processTestClass",
+          "parameterTypes": [
+            "org.gradle.api.internal.tasks.testing.TestClassRunInfo"
+          ]
+        },
+        {
+          "name": "startProcessing",
+          "parameterTypes": []
+        },
+        {
+          "name": "stop",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.worker.TestWorker",
+      "serializable": true
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.worker.TestWorker$State",
+      "serializable": true
+    },
+    {
+      "type": "org.gradle.api.internal.tasks.testing.worker.TestWorker$TestFrameworkServiceRegistry",
+      "methods": [
+        {
+          "name": "createActorFactory",
+          "parameterTypes": [
+            "org.gradle.internal.concurrent.ExecutorFactory"
+          ]
+        },
+        {
+          "name": "createClock",
+          "parameterTypes": []
+        },
+        {
+          "name": "createExecutorFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "createIdGenerator",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.internal.file.StatStatistics$Collector"
+    },
+    {
+      "type": "org.gradle.internal.logging.services.LoggingServiceRegistry",
+      "methods": [
+        {
+          "name": "createLoggingManagerFactory",
+          "parameterTypes": [
+            "org.gradle.internal.time.Clock"
+          ]
+        },
+        {
+          "name": "createTimeProvider",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.internal.logging.services.LoggingServiceRegistry$CommandLineLogging"
+    },
+    {
+      "type": "org.gradle.internal.logging.slf4j.StaticLoggerProvider"
+    },
+    {
+      "type": "org.gradle.internal.nativeintegration.filesystem.services.FileSystemServices",
+      "methods": [
+        {
+          "name": "configure",
+          "parameterTypes": [
+            "org.gradle.internal.service.ServiceRegistration"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.internal.nativeintegration.filesystem.services.GenericFileSystem$Factory"
+    },
+    {
+      "type": "org.gradle.internal.nativeintegration.services.NativeServices",
+      "methods": [
+        {
+          "name": "createNativeCapabilities",
+          "parameterTypes": []
+        },
+        {
+          "name": "createSystemInfo",
+          "parameterTypes": [
+            "org.gradle.internal.os.OperatingSystem"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.internal.nativeintegration.services.NativeServices$1",
+      "methods": [
+        {
+          "name": "configure",
+          "parameterTypes": [
+            "org.gradle.internal.service.ServiceRegistration"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.internal.nativeintegration.services.NativeServices$NativeFeatures$1$2"
+    },
+    {
+      "type": "org.gradle.internal.remote.services.MessagingServices",
+      "methods": [
+        {
+          "name": "createMessagingClient",
+          "parameterTypes": [
+            "org.gradle.internal.remote.internal.OutgoingConnector",
+            "org.gradle.internal.concurrent.ExecutorFactory"
+          ]
+        },
+        {
+          "name": "createOutgoingConnector",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.internal.service.MethodHandleBasedServiceMethodFactory",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.io.DataInputStream"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker$2",
+      "methods": [
+        {
+          "name": "configure",
+          "parameterTypes": [
+            "org.gradle.internal.service.ServiceRegistration"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker$WorkerServices",
+      "methods": [
+        {
+          "name": "createGradleUserHomeDirProvider",
+          "parameterTypes": []
+        },
+        {
+          "name": "createWorkerDirectoryProvider",
+          "parameterTypes": [
+            "org.gradle.initialization.GradleUserHomeDirProvider"
+          ]
+        },
+        {
+          "name": "createWorkerLogEventListener",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.junit.internal.AssumptionViolatedException"
+    },
+    {
+      "type": "org.junit.jupiter.api.Test"
+    },
+    {
+      "type": "org.junit.jupiter.engine.JupiterTestEngine"
+    },
+    {
+      "type": "org.junit.platform.commons.annotation.Testable"
+    },
+    {
+      "type": "org.junit.platform.launcher.core.LauncherFactory"
+    },
+    {
+      "type": "org.junit.platform.launcher.listeners.UniqueIdTrackingListener"
+    },
+    {
+      "type": "org.junit.vintage.engine.VintageTestEngine"
+    },
+    {
+      "type": "sun.awt.image.ByteComponentRaster",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "dataOffsets"
+        },
+        {
+          "name": "pixelStride"
+        },
+        {
+          "name": "scanlineStride"
+        },
+        {
+          "name": "type"
+        }
+      ]
+    },
+    {
+      "type": "sun.java2d.Disposer",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "addRecord",
+          "parameterTypes": [
+            "java.lang.Object",
+            "long",
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.NativePRNG",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.security.SecureRandomParameters"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData"
+    },
+    {
+      "type": "sun.util.resources.cldr.CalendarData"
+    },
+    {
+      "type": {
+        "proxy": [
+          "org.gradle.api.internal.tasks.testing.TestClassProcessor"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "org.gradle.api.internal.tasks.testing.TestResultProcessor",
+          "org.gradle.internal.concurrent.ThreadSafe"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "org.gradle.internal.logging.events.OutputEventListener"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "org.gradle.process.internal.worker.child.WorkerLoggingProtocol",
+          "org.gradle.internal.concurrent.ThreadSafe"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "glob": "1x1.png"
+    },
+    {
+      "glob": "META-INF/services/java.nio.channels.spi.SelectorProvider"
+    },
+    {
+      "glob": "META-INF/services/javax.imageio.spi.ImageInputStreamSpi"
+    },
+    {
+      "glob": "META-INF/services/javax.imageio.spi.ImageOutputStreamSpi"
+    },
+    {
+      "glob": "META-INF/services/javax.imageio.spi.ImageReaderSpi"
+    },
+    {
+      "glob": "META-INF/services/javax.imageio.spi.ImageTranscoderSpi"
+    },
+    {
+      "glob": "META-INF/services/javax.imageio.spi.ImageWriterSpi"
+    },
+    {
+      "glob": "META-INF/services/org.junit.platform.commons.support.scanning.ClasspathScanner"
+    },
+    {
+      "glob": "META-INF/services/org.junit.platform.engine.TestEngine"
+    },
+    {
+      "glob": "META-INF/services/org.junit.platform.launcher.LauncherDiscoveryListener"
+    },
+    {
+      "glob": "META-INF/services/org.junit.platform.launcher.LauncherSessionListener"
+    },
+    {
+      "glob": "META-INF/services/org.junit.platform.launcher.PostDiscoveryFilter"
+    },
+    {
+      "glob": "META-INF/services/org.junit.platform.launcher.TestExecutionListener"
+    },
+    {
+      "glob": "META-INF/services/org.slf4j.spi.SLF4JServiceProvider"
+    },
+    {
+      "glob": "black.png"
+    },
+    {
+      "glob": "junit-platform.properties"
+    },
+    {
+      "glob": "lorikeet.jpg"
+    },
+    {
+      "glob": "white.png"
+    },
+    {
+      "module": "java.desktop",
+      "glob": "sun/awt/resources/awt_nl.properties"
+    },
+    {
+      "module": "java.desktop",
+      "glob": "sun/awt/resources/awt_nl_NL.properties"
+    },
+    {
+      "module": "java.desktop",
+      "glob": "sun/java2d/cmm/profiles/sRGB.pf"
+    },
+    {
+      "module": "jdk.jfr",
+      "glob": "jdk/jfr/internal/types/metadata.bin"
+    },
+    {
+      "bundle": "sun.awt.resources.awt"
+    }
+  ]
+}
